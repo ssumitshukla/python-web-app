@@ -1,0 +1,66 @@
+<html>
+<head>
+
+<title>Python App</title>
+<style>
+body {
+background-image: url("zebra.jpg");
+background-size: cover;
+}
+
+form {
+
+text-align:center
+}
+
+input{
+width: 50%
+}
+
+input[type=submit] {
+  background-color: green;
+  color: white;
+  width: 10%
+}
+
+
+label {
+  font-size: 20px;
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+}​
+
+
+</style>
+</head>
+
+<body>
+<center><h1>Sum Two Numbers</h1></center>
+
+<form action="{{ url_for('add')}}" method="post">
+
+
+<label for = "fnum">First Number</label>
+<input type = 'text' id = 'fnam', name = 'fn', required = 'required', placeholder = 'Enter First Number...' />
+
+<br></br>
+
+<label for = "snum">Second Number</label>
+<input type = 'text' id = 'snam', name = 'sn', required = 'required', placeholder = 'Enter Second Number...' />
+
+<br></br>
+
+<label></label>
+<input id="submit" type="submit" value="Calculate Sum" ></input>
+
+</form>
+
+</body>
+
+
+
+
+
+
+</html>
